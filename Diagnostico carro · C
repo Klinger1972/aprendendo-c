@@ -1,0 +1,77 @@
+/*
+ * =============================================================
+ *   DIAGNÓSTICO AUTOMOTIVO INTELIGENTE
+ *   Sistema de árvore de decisão com pontuação de probabilidade
+ * =============================================================
+ */
+
+#include <stdio.h>
+ #include <string.h>
+ #include <stdlib.h>
+
+ /* ── Número de problemas rastreados ── */
+ #define N_problemas 18
+ 
+/* ── Índices dos problemas ── */
+ #define P_BATERIA0 0
+ #define P_ALTERNADOR 1
+ #define P_MOTOR_ARRANQUE 2
+ #define P_COMBUSTIVEL 3
+ #define P_BOMBA_COMBUSTIVEL 4
+ #define P_VELA_IGNICAO 5
+ #define P_RADIADOR 6
+ #define P_TERMOSATATO 7
+ #define P_VAZAMENTO_DE_AGUA 8
+ #define P_OLEO 9
+ #define P_CORREIA_DISTRIBUICAO 10
+ #define P_FREIO_PASTILHA 11
+ #define P_FREIO_DISCO 12
+ #define P_SUSPENSÃO_AMORTECEDOR 13
+ #define P_PNEU 14
+ #define P_TRANSMISSÃO 15
+ #define P_EMBREAGEM 16
+ #define P_SENSORES 17
+
+ /* ── Nomes dos problemas ── */
+ const char* nomes[N_problemas] = {
+"Bateria descarregada/fraca",
+"Alternador com defeito",
+"Motor de arranque com defeito",
+"Falta de combustível ou filtro entupido",
+"Bomba de combustível falhando",
+"Velas / cabos de ignição desgastadas",
+"Radiador entupido ou com vazamento",
+"Termostato com defeito",
+"Vazamento de água no sistema de arrefecimento",
+"Nível de óleo baixo ou óleo sujo",
+"Correia de distribuição com defeito",
+"Pastilhas de freio desgastadas",
+"Discos de freio com defeito",
+"Amortecedores com defeito",
+"Pneus desgastados ou com vazamento",
+"Transmissão com defeito",
+"Embreagem com defeito",
+"Sensores com defeito"
+ };
+
+ * ── Pontuações acumuladas ── */
+int score[N_problemas];
+
+/* ── Utilitários de entrada ── */
+void limpar_buffer(void) {
+int c;
+while ((c = getchar()) != '\n' && c != EOF) 
+}
+
+/* Retorna 1 para Sim, 0 para Não, -1 para Não sei */
+int pergunta(const char *texto) {
+char resp[16];
+for (;;) {
+
+
+}
+}
+
+
+
+
